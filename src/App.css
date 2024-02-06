@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+
+/*----Reset----*/
+*{
+  box-sizing: border-box;
+}
+
+
+html{
+  font-family: 'Lato', sans-serif;
+  background-color: #1a262a;;
+}
+
+body{
+  margin:0;
+  background-image: url('./assets/rick_and_morty_bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input{
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-bottom-left-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  font-size: 1rem;
+  box-shadow: 1px 1px 10px;
+  padding-left: 0.8rem;
+}
+
+button{
+  background-color: green;
+  color: white;
+  border: none;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  box-shadow: 1px 1px 10px;
+  height: 30px;
+  width: 60px;
+  font-size: 0.75rem;
+}
+
+.button-form{
+  width: 60px;
+  height: 40px;
+  font-size: 1rem;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+.pagination{
+  display: flex;
+  flex-wrap: wrap;
+  white-space: nowrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  overflow-x: auto;
+  grid-auto-flow: column;
+  grid-gap: 5px;
+  margin-bottom: 1rem;
+}
+
+.active{
+  background-color: #3AB1C8;
+}
+
+.pagination > button{
+  border-radius: 0.3rem;
+}
+
+.img-header{
+  width: 300px;
+}
+
+@media screen and (min-width: 768px){
+  .img-header{
+    width: 500px;
+  }
+
+  input{
+  width: 300px;
+  height: 40px;
+}
+
+.button-form{
+  width: 80px;
+  height: 40px;
+}
+
+button{
+  height: 40px;
+  width: 80px;
+  font-size: 1rem;
+}
+}
